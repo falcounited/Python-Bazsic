@@ -1,0 +1,104 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOvEhkzyDQP+6XsZogGivNx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/falcounited/Python-Bazsic/blob/main/python%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=int(input(\"enter your amount\"))\n",
+        "if x>250000:\n",
+        "    print((x-250000)*10/100)\n",
+        "    print (\"taxable\")\n",
+        "if x<250000:\n",
+        "  print((x-250000)*10/100)\n",
+        "  print (\"non taxable\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tBS3_dZoBCXx",
+        "outputId": "e3171a82-b2fc-41a9-90a6-b533589d415a"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your amount300000\n",
+            "5000.0\n",
+            "taxable\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x =int(input(\"enter return\"))\n",
+        "if x>250000 and x<500000:\n",
+        "    print((x-50000)*10/100)\n",
+        "    print (\"taxable\")\n",
+        "if x<250000:\n",
+        "    print((x-250000)*10/100)\n",
+        "    print (\"non taxable\")\n",
+        "if x>500000:\n",
+        "    print((500000-250000)*10/100+(x-500000)*20/100)\n",
+        "print (\"taxable \")"
+      ],
+      "metadata": {
+        "id": "oGKOHY3WB6-X",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9955f7f8-2c87-48d6-d562-a071b105c6d2"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter return750000\n",
+            "75000.0\n",
+            "taxable \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "vpELYDeAG2FB"
+      },
+      "execution_count": 15,
+      "outputs": []
+    }
+  ]
+}
